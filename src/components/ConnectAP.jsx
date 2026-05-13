@@ -12,8 +12,6 @@ export default function ConnectAPI() {
       .get("https://fakestoreapi.com/products")
       .then((res) => {
         setProducts(res.data || []);
-        /*  res.data → danh sách sản phẩm từ API
-            || [] → nếu không có dữ liệu, dùng mảng rỗng*/
       })
       .catch((err) => {
         console.error("Lỗi:", err);
