@@ -5,6 +5,9 @@ import Footer from "./components/Footer";
 
 import Index from "./pages/Home";
 import Detail from "./pages/Detail";
+import Tranggioithieu from "./components/Tranggioithieu";
+import Tintuc from "./pages/Tintuc";
+import Sanpham from"./pages/Sanpham";
 
 export default function App() {
   
@@ -16,6 +19,11 @@ export default function App() {
         <Route exact path="*" element={<Index />} />
         <Route exact path="/index" element={<Index />} />
         <Route path="/detail/:id" element={<Detail />} />
+        <Route path="/gioithieu" element={<Tranggioithieu />} />
+        <Route path="/tintuc" element={<Tintuc />} />
+        <Route path="/sanpham" element={<Sanpham />} />
+
+        
 
       </Routes>
 
